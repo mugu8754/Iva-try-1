@@ -1,0 +1,16 @@
+# Copy this file to .env and fill in your values
+
+# IVASMS Account
+IVASMS_EMAIL=your@email.com
+IVASMS_PASSWORD=yourpassword
+
+# Telegram Bot (from @BotFather)
+BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrSTUvwxYZ
+
+# Your Telegram chat/group ID (use @userinfobot to find it)
+CHAT_ID=-100123456789
+
+# Optional: tuning
+POLL_INTERVAL=3        # seconds between polls (default 3)
+SESSION_TIMEOUT=7200   # re-login interval in seconds (default 7200 = 2h)
+LOG_LEVEL=INFO         # DEBUG / INFO / WARNING / ERROR

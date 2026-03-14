@@ -1,0 +1,21 @@
+services:
+  - type: worker
+    name: ivasms-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: IVASMS_EMAIL
+        sync: false
+      - key: IVASMS_PASSWORD
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: CHAT_ID
+        sync: false
+      - key: POLL_INTERVAL
+        value: "3"
+      - key: SESSION_TIMEOUT
+        value: "7200"
+      - key: LOG_LEVEL
+        value: "INFO"
